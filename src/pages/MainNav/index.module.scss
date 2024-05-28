@@ -1,0 +1,33 @@
+.content {
+    
+    height: 100%;
+
+    .left{
+        display: flex;
+        margin-left: 20px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .title {
+        padding-left: 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .right{
+        display: flex;
+        
+        
+        div{
+            width: 100px;
+            margin-right: 20px;
+        }
+    }
+
+    :global(.ant-layout-header) {
+        background-color: #fff;
+    }
+}

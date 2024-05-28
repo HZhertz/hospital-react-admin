@@ -1,0 +1,146 @@
+.father {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    height: 750px;
+
+    .left {
+        width: 200px;
+        padding: 20px 0;
+        float: left;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 750px;
+
+        .left_item {
+            width: 200px;
+            font-size: 18px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            padding-left: 20px;
+
+            &:hover {
+                color: #1890ff;
+            }
+        }
+    }
+
+    .right {
+        float: left;
+        padding: 20px;
+        width: 800px;
+
+        .username {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .ulDiv {
+            margin: 0 -20px;
+            height: 450px;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                opacity: 0.2;
+            }
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                border-radius: 0;
+            }
+
+            border-bottom: 1px #ccc solid;
+
+            .ul {
+                list-style-type: none;
+                padding: 0 20px;
+
+
+                .li {
+                    margin-bottom: 10px;
+                    overflow: hidden;
+
+                    .imgLeft {
+                        width: 40px;
+                        float: left;
+                    }
+
+                    .sayLeft {
+                        margin-left: 5px;
+                        background-color: #12B7F5;
+                        color: #fff;
+                        line-height: 30px;
+                        padding: 5px;
+                        max-width: 550px;
+                        border-radius: 5px;
+                        float: left;
+                    }
+
+                    .say::after {
+                        clear: both;
+                    }
+
+                    .imgRight {
+                        width: 40px;
+                        float: right;
+                    }
+
+                    .sayRight {
+                        margin-right: 5px;
+                        background-color: #12B7F5;
+                        color: #fff;
+                        line-height: 30px;
+                        padding: 5px;
+                        max-width: 550px;
+                        border-radius: 5px;
+                        float: right;
+                    }
+
+                    .say1::after {
+                        clear: both;
+                    }
+                }
+            }
+        }
+
+        :global(.ant-input) {
+            resize: none;
+            border: none;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                opacity: 0.5;
+            }
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                border-radius: 0;
+            }
+
+            &:focus {
+                border: 0px !important;
+                box-shadow: none;
+            }
+        }
+
+        .button {
+            margin-top: 10px;
+            float: right;
+        }
+    }
+}
